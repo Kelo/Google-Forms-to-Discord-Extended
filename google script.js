@@ -39,7 +39,7 @@ function onSubmit(e) {
       // Add the number of characters in a part to the total character count of this embed
       currentEmbedCharacterNum += parts[j].length;
       // If the total character count with this part included pushes the total over 5000 (Discord Embeds have a character limit)
-      if (currentEmbedCharacterNum >= 5000){
+      if (currentEmbedCharacterNum >= 5000){ // If you're still getting errors with the form, try lowering 5000 to 4000.
         // Send away an embed with the current items data
         sendEmbed(items);
         // Wait a second so Discord doesn't get overwhelmed with requests
