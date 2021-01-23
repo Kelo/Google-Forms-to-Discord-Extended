@@ -9,7 +9,7 @@
 
 ![script editor](https://pillow.s-ul.eu/iLfUuy9l.png)
 
-4) Paste the contents of `google script.js`.
+4) Paste the contents of `script.gs`.
 
 5) Open Discord and make a channel where you'd like the responses to be sent.
 6) Create a webhook and copy the URL. Replace `WEBHOOKURL` at the top of the script with the URL you copied.
