@@ -79,8 +79,7 @@ function sendEmbed(items){
       "Content-Type": "application/json",
     },
     "payload": JSON.stringify({
-      "content": "‌",
-      "embeds": [{
+       "embeds": [{
         "title": "Some nice title here",
         "color": 33023, // This is optional, you can look for decimal colour codes at https://convertingcolors.com/
         "fields": items,
