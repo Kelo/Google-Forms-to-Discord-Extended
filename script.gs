@@ -37,7 +37,7 @@ function onSubmit(e) {
     // For loop to iterate through the parts of an answer
     for (var j = 0; j < parts.length; j++) {
       // Add the number of characters in a part to the total character count of this embed
-      currentEmbedCharacterNum += parts[j].length + question;
+      currentEmbedCharacterNum += parts[j].length + question.length;
       
       // If the total character count with this part included pushes the total over 5000 (Discord Embeds have a character limit)
       if (currentEmbedCharacterNum >= 5000){ // If you're still getting errors with the form, try lowering 5000 to 4000.
