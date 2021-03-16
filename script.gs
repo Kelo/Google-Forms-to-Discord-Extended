@@ -36,6 +36,10 @@ function onSubmit(e) {
 
     // For loop to iterate through the parts of an answer
     for (var j = 0; j < parts.length; j++) {
+      if (question.length > 256){
+        question = question.substring(0, 220) + "..."
+      }
+      
       // Add the number of characters in a part to the total character count of this embed
       currentEmbedCharacterNum += parts[j].length + question.length;
       
@@ -66,8 +70,9 @@ function onSubmit(e) {
       }
     }
   }
-  // Send an embed to the webhook.
-  sendEmbed(items);
+  if (question.length > 256){
+        question = question.substring(0, 220) + "..."
+   }
 
 };
 
