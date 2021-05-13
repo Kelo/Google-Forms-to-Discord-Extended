@@ -1,5 +1,5 @@
 // The Post url to send the embed to. This is where you should paste your webhook link.
-var POST_URL = "WEBHOOK URL";
+var POST_URL = "Discord Webhook link here";
 
 // onSubmit function that should be triggered when a new form is submitted.
 function onSubmit(e) {
@@ -34,21 +34,20 @@ function onSubmit(e) {
       continue;
     }
 
+    if (question.length > 256){
+      question = question.substring(0, 220) + "...";
+    } 
+
     // For loop to iterate through the parts of an answer
     for (var j = 0; j < parts.length; j++) {
-      if (question.length > 256){
-        question = question.substring(0, 220) + "..."
-      }
-      
       // Add the number of characters in a part to the total character count of this embed
       currentEmbedCharacterNum += parts[j].length + question.length;
-      
       // If the total character count with this part included pushes the total over 5000 (Discord Embeds have a character limit)
-      if (currentEmbedCharacterNum >= 5000){ // If you're still getting errors with the form, try lowering 5000 to 4000.
+      if (currentEmbedCharacterNum >= 5000){
         // Send away an embed with the current items data
         sendEmbed(items);
         // Wait a second so Discord doesn't get overwhelmed with requests
-        Utilities.sleep(1000)
+        Utilities.sleep(50)
         // Reset the character count and items array
         currentEmbedCharacterNum = 0;
         items = [];
@@ -70,9 +69,8 @@ function onSubmit(e) {
       }
     }
   }
-  if (question.length > 256){
-        question = question.substring(0, 220) + "..."
-   }
+  // Send an embed to the webhook.
+  sendEmbed(items);
 
 };
 
@@ -85,7 +83,7 @@ function sendEmbed(items){
       "Content-Type": "application/json",
     },
     "payload": JSON.stringify({
-       "embeds": [{
+      "embeds": [{
         "title": "Some nice title here",
         "color": 33023, // This is optional, you can look for decimal colour codes at https://convertingcolors.com/
         "fields": items,
