@@ -1,3 +1,5 @@
+Just a heads up that the 1st part of this README.md, including the images, is sourced from the original repo.
+
 ![THIS](https://pillow.s-ul.eu/6ev89Z6J)
 
 # Basic Setup
