@@ -116,6 +116,36 @@ Allows for a thumbnail to be displayed in the embed.
 }
 ```
 
+### Tag a user
+Allows you to put in a content message that will actually ping a user. ```<@user id here>``` E.g. ```<@123123123>```
+```javascript
+{
+  "content" : "<@user id here>"
+  "embeds" :[{
+    "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+    "fields": items,
+    "thumbnail": {
+      "url": "URL CHANGE THIS IN SCRIPT"
+    }
+  }]
+}
+```
+
+### Tag a role
+Allows you to put in a content message that will actually ping a role. ```<@&role id here>``` E.g. ```<@&123123123>```
+```javascript
+{
+  "content" : "<@&role id here>"
+  "embeds" :[{
+    "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+    "fields": items,
+    "thumbnail": {
+      "url": "URL CHANGE THIS IN SCRIPT"
+    }
+  }]
+}
+```
+
 ### Footer icon
 An optional customization you can make to footer text, is to add an icon image which will be displayed next to it.
 ```javascript
