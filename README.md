@@ -1,6 +1,9 @@
 # Google Forms to Discord (Webhook)
 
-Just a heads up that the 1st part of this README.md, including the images, is sourced from the original repo.
+### Having issues?
+Maybe this will help: [HELP.md](https://github.com/Kelo/Google-Forms-to-Discord-Extended/blob/master/HELP.md)
+
+###### Just a heads up that the 1st part of this README.md, including the images, is sourced from the original repo.
 
 ![THIS](https://pillow.s-ul.eu/6ev89Z6J)
 
