@@ -59,7 +59,7 @@ With the addition of Discord's new [Forum channels](https://discord.com/blog/for
 
 ```javascript
 {
-  "thread_id" : 1234 //Your thread id goes here!,
+  "thread_id" : 1234 //Your thread id goes here! ,
   "embeds" :[{
     "title": "TOP TEXT CHANGE THIS IN SCRIPT",
     "fields" : items,
