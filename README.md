@@ -35,6 +35,42 @@ Maybe this will help: [HELP.md](https://github.com/Kelo/Google-Forms-to-Discord-
 
 In this section, we will outline the multiple different cosmetic customizations that you can add to your webhook. You can use any combination of the options displayed below.
 
+## Forums Support
+With the addition of Discord's new [Forum channels](https://discord.com/blog/forum-channels-space-for-organized-conversation), there is the ability to direct your google form responses into individual threads or the same singular thread!
+
+
+#### New Forum channel thread for each response
+`thread_name` can be used to specify the name of the thread you want to generate.
+
+```javascript
+{
+  "thread_name" : "THREAD TITLE GOES HERE",
+  "embeds" :[{
+    "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+    "fields" : items,
+    "color": 16711680
+  }]
+}
+
+```
+
+#### Same Forum channel thread for each response
+`thread_id` can be used to specify the thread you want all responses to go into.
+
+```javascript
+{
+  "thread_id" : 1234 //Your thread id goes here!,
+  "embeds" :[{
+    "title": "TOP TEXT CHANGE THIS IN SCRIPT",
+    "fields" : items,
+    "color": 16711680
+  }]
+}
+
+```
+-----
+
+## Cosmetics 
 #### Colour
 This option will allow you to set a colour to your embed. The colour option requires a numerical input instead of hexadecimal, I recommend using this site to convert between hex and decimal https://www.spycolor.com/.
 > Putting `0` as the colour value will make the bar transparent.
@@ -50,7 +86,7 @@ E.g. Red in Hexadecimal is #FF0000. As a decimal, this would be translated into 
 }
 ```
 
-### Author
+#### Author
 This option adds an author block to the embed. The author block (object) includes three values:
   * name - the name field.
   * url - allows for a hyperlink to be attached to the name.
@@ -69,7 +105,7 @@ This option adds an author block to the embed. The author block (object) include
 }
 ```
 
-### URL
+#### URL
 This option binds a url link to the title of your embed.
 ```javascript
 {
@@ -81,7 +117,7 @@ This option binds a url link to the title of your embed.
 }
 ```
 
-### Description
+#### Description
 Displays a description for the embed.
 ```javascript
 {
@@ -93,7 +129,7 @@ Displays a description for the embed.
 }
 ```
 
-### Image
+#### Image
 Displays an image inside of the embed.
 ```javascript
 {
@@ -107,7 +143,7 @@ Displays an image inside of the embed.
 }
 ```
 
-### Thumbnail
+#### Thumbnail
 Allows for a thumbnail to be displayed in the embed.
 ```javascript
 {
@@ -121,7 +157,7 @@ Allows for a thumbnail to be displayed in the embed.
 }
 ```
 
-### Tag a user
+#### Tag a user
 Allows you to put in a content message that will actually ping a user. ```<@user id here>``` E.g. ```<@123123123>```
 ```javascript
 {
@@ -136,7 +172,7 @@ Allows you to put in a content message that will actually ping a user. ```<@user
 }
 ```
 
-### Tag a role
+#### Tag a role
 Allows you to put in a content message that will actually ping a role. ```<@&role id here>``` E.g. ```<@&123123123>```
 ```javascript
 {
@@ -151,7 +187,7 @@ Allows you to put in a content message that will actually ping a role. ```<@&rol
 }
 ```
 
-### Footer icon
+#### Footer icon
 An optional customization you can make to footer text, is to add an icon image which will be displayed next to it.
 ```javascript
 {
