@@ -33,7 +33,7 @@ Maybe this will help: [HELP.md](https://github.com/Kelo/Google-Forms-to-Discord-
 
 # Additional Options
 
-In this section, we will outline the multiple different cosmetic customizations that you can add to your webhook. You can use any combination of the options displayed below.
+In this section, we will outline the multiple different customizations that you can add to your webhook. You can use any combination of the options displayed below.
 
 ## Forums Support
 With the addition of Discord's new [Forum channels](https://discord.com/blog/forum-channels-space-for-organized-conversation), there is the ability to direct your google form responses into individual threads or the same singular thread!
