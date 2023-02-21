@@ -40,6 +40,9 @@ With the addition of Discord's new [Forum channels](https://discord.com/blog/for
 
 
 #### New Forum channel thread for each response
+
+_There is a script for keeping extended responses in a singular thread: [forum_script.gs](https://github.com/Kelo/Google-Forms-to-Discord-Extended/blob/master/forum_script.gs)._
+
 `thread_name` can be used to specify the name of the thread you want to generate.
 
 ```javascript
