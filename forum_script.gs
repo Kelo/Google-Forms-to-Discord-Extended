@@ -128,11 +128,11 @@ function sendFollowupEmbed(items, thread_id, part){
           "payload": JSON.stringify({
             "content": "",
               "embeds": [{
-                "title": "Some nice title here (" + part + ")",
+                "title": "Some nice embed title here (" + part + ")",
                 "color": 33023, // This is optional, you can look for decimal colour codes at https://convertingcolors.com/
                 "fields": items,
                 "footer": {
-                  "text": "Some footer here"
+                  "text": "Some embed footer here"
                 }
               }]
           })
