@@ -84,11 +84,11 @@ function sendEmbed(items){
     },
     "payload": JSON.stringify({
       "embeds": [{
-        "title": "Some nice title here",
+        "title": "Some nice embed title here",
         "color": 33023, // This is optional, you can look for decimal colour codes at https://convertingcolors.com/
         "fields": items,
         "footer": {
-          "text": "Some footer here"
+          "text": "Some embed footer here"
         }
       }]
     })
