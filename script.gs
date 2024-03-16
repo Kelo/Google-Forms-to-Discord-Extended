@@ -22,6 +22,12 @@ function onSubmit(e) {
     var question = response[i].getItem().getTitle();
     // Get the answer text
     var answer = response[i].getResponse();
+
+    // When checkbox questions are used, we need to compact the multiple choices into one answer string
+    if (answer instanceof Array){
+      answer = answer.join(", ");
+    }
+
     // If the answer is over a certain number of characters, break it into multiple parts.
     try {
       var parts = answer.match(/[\s\S]{1,1024}/g) || [];
